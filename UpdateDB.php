@@ -1,6 +1,6 @@
 <?php
 
-require_once 'autoloader.php';
+require_once 'vendor/simplepie/simplepie/autoloader.php';
 
 $url ='http://archivo.eluniversal.com.mx/rss/notashome.xml';
 $feed = new SimplePie();
