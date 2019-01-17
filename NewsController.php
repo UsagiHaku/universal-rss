@@ -74,4 +74,8 @@ class NewsController {
     function get_news() {
         return $this->db->get_news();
     }
+
+    function  get_news_by_id($id){
+        return $this->db->get_news_by_id($id);
+    }
 }

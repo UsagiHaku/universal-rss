@@ -55,4 +55,17 @@ class MySqlDatabase {
 
         return $news;
     }
+
+    function get_news_by_id($id){
+        $query= "SELECT description, title, date, link FROM NewsInfo WHERE title='$id'";
+        $result = mysqli_query($this->connection, $query);
+        $row = mysqli_fetch_array($result);
+        $newsById = new News(
+            $row['title'],
+            $row['link'],
+            $row['date'],
+            $row['description']
+        );
+        return $newsById;
+    }
 }
