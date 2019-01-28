@@ -15,6 +15,7 @@ class NewsController {
 
         $this->feed = new SimplePie();
         $this->feed->set_feed_url($this->rssUrl);
+        $this->feed->set_cache_location($_SERVER['DOCUMENT_ROOT'] . '/PracticaOptimizacionWeb/cache');
         $this->feed->init();
 
         $item = $this->feed->get_item(0);

@@ -57,7 +57,7 @@ class MySqlDatabase {
     }
 
     function get_news_by_id($id){
-        $query= "SELECT description, title, date, link FROM NewsInfo WHERE title='$id'";
+        $query= "SELECT description, title, date, link FROM NewsInfo WHERE title LIKE '%$id%'";
         $result = mysqli_query($this->connection, $query);
         $row = mysqli_fetch_array($result);
         $newsById = new News(
