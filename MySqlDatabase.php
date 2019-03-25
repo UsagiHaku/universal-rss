@@ -36,10 +36,10 @@ class MySqlDatabase {
         mysqli_query($this->connection, $query);
     }
 
-    function get_news() {
+    function get_news($orderBy) {
         $news = [];
 
-        $query = "SELECT id, description, title, date, link FROM NewsInfo ORDER BY date DESC";
+        $query = "SELECT id, description, title, date, link FROM NewsInfo ORDER BY " . $orderBy . " ASC";
         $result = mysqli_query($this->connection, $query);
 
         while($row = mysqli_fetch_assoc($result)){

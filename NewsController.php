@@ -73,7 +73,11 @@ class NewsController {
     }
 
     function get_news() {
-        return $this->db->get_news();
+        $orderBy = 'date';
+        if (isset($_GET['orderBy'])) {
+            $orderBy = $_GET['orderBy']; //title, date, type
+        }
+        return $this->db->get_news($orderBy);
     }
 
     function  get_news_by_id($id){

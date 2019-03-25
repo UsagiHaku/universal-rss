@@ -17,16 +17,10 @@ if ($result) {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Sesion</title>
-    <link rel="stylesheet" href="estilos/tabla.css">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/estiloheader.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="libreria/css/bootstrap.min.css">
-    <script type="text/javascript" src="libreria/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="libreria/js/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="estilos/referencias.css">
-    <script type="text/javascript" src="Validate.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/Main.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
@@ -48,6 +42,7 @@ if ($result) {
 session_start();
 ?>
 <header>
+    <div class="container"></div>
 
     <section id="menu">
         <ul>
